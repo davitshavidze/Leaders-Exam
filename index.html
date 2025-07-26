@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Book Library App</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="header">Book Library App</header>
+
+    <section id="registration">
+      <h2>Register account or login in</h2>
+      <div class="form-container" id="form-container">
+        <input type="email" placeholder="Enter an email" id="email"  required />
+        <input type="password" placeholder="Enter an password" id="password"  required/>
+        <button id="register-btn" class="btns" onclick="registration()">
+          Register
+        </button>
+        <button id="login-btn" class="btns" onclick="login()">Login</button>
+
+        <p id="message"></p>
+      </div>
+    </section>
+
+    <main class="main">
+      <section class="library" id="library" style="text-align: center;">
+        <h2>All Books Category</h2>
+        <div id="books-list" class="container"></div>
+      </section>
+
+      <section class="favourite" style="text-align: center;">
+        <h2>Favourite Books</h2>
+        <div id="favourite-list" class="container"></div>
+      </section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
